@@ -1,4 +1,12 @@
-<?php include("/includes/header.php"); ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Desenvolvimento</title>
+    <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
 
 <main class="container">
     <div class="construction-icon">🚧</div>
@@ -11,4 +19,5 @@
     <p class="contact">Agradecemos sua paciência e compreensão.</p>
 </div>
 
-<?php include("/includes/footer.php"); ?>
+</body>
+</html>
