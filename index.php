@@ -1,4 +1,4 @@
-<?php include "/includes/header.php"; ?>
+<?php include("/includes/header.php"); ?>
 
 <main class="container">
     <div class="construction-icon">🚧</div>
@@ -11,4 +11,4 @@
     <p class="contact">Agradecemos sua paciência e compreensão.</p>
 </div>
 
-<?php include "/includes/footer.php"; ?>
+<?php include("/includes/footer.php"); ?>
