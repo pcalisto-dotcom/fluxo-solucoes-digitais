@@ -1,11 +1,11 @@
 <?php
 
 function get_conn() {
-    $host = 'mysql';
+    $host = 'localhost';
     $username = 'simplifica_fluxo_admin';
     $password =  'M4r!pos4s';
     $db = 'simplifica_fluxo';
-    $port =  3306;
+    $port = 3306;
 
     $url = "mysql:host=$host:$port;dbname=$db";
     $pdo = new PDO($url, $username, $password);
