@@ -36,55 +36,7 @@
     </div>
 </section>
 
-<section id="equipe">
-    <div class="container">
-        <div class="section-title">
-            <h2>Nossa Equipe</h2>
-        </div>
-        <div class="team-container">
-            <div class="team-member">
-                <div class="member-img">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="member-info">
-                    <h3>Maria Silva</h3>
-                    <p class="role">CEO e Desenvolvedora Full-Stack</p>
-                    <p>Responsável pela gestão da empresa e desenvolvimento de sistemas complexos. Especialista em PHP e React.</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="member-img">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="member-info">
-                    <h3>João Santos</h3>
-                    <p class="role">Desenvolvedor Back-End</p>
-                    <p>Especialista em banco de dados MySQL/MariaDB e desenvolvimento de APIs RESTful. Focado em segurança e performance.</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="member-img">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="member-info">
-                    <h3>Ana Oliveira</h3>
-                    <p class="role">Desenvolvedora Front-End</p>
-                    <p>Cria interfaces intuitivas e responsivas com HTML, CSS e JavaScript. Especialista em experiência do usuário (UX).</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="member-img">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="member-info">
-                    <h3>Carlos Ferreira</h3>
-                    <p class="role">Analista de Sistemas</p>
-                    <p>Analisa necessidades dos clientes e traduz em requisitos técnicos para a equipe de desenvolvimento.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include './components/team.php'; ?>
 
 <section id="servicos">
     <div class="container">
@@ -167,7 +119,7 @@
             <div class="contact-info">
                 <h3>Entre em Contato</h3>
                 <p>Tem um projeto em mente? Entre em contato conosco para uma consulta gratuita!</p>
-                
+
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
@@ -177,7 +129,7 @@
                         <p>Av. Paulista, 1000 - São Paulo, SP</p>
                     </div>
                 </div>
-                
+
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
@@ -187,7 +139,7 @@
                         <p>(11) 99999-9999</p>
                     </div>
                 </div>
-                
+
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
@@ -197,7 +149,7 @@
                         <p>contato@webdevsolutions.com.br</p>
                     </div>
                 </div>
-                
+
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-clock"></i>
@@ -208,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="contact-form">
                 <h3>Envie uma Mensagem</h3>
                 <form id="formContato">
@@ -216,17 +168,17 @@
                         <label for="nome">Nome completo *</label>
                         <input type="text" id="nome" class="form-control" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">E-mail *</label>
                         <input type="email" id="email" class="form-control" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
                         <input type="tel" id="telefone" class="form-control">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="assunto">Assunto</label>
                         <select id="assunto" class="form-control">
@@ -237,12 +189,12 @@
                             <option value="outro">Outro</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="mensagem">Mensagem *</label>
                         <textarea id="mensagem" class="form-control" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn">Enviar Mensagem</button>
                 </form>
             </div>
