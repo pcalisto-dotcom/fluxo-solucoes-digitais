@@ -1,10 +1,6 @@
 <?php
 
-const sql = "
-CREATE DATABASE IF NOT EXISTS simplifica_fluxo;
-
-USE simplifica_fluxo;
-
+$sql = "
 DROP TABLE IF EXISTS servico;
 
 CREATE TABLE IF NOT EXISTS servico (
@@ -38,7 +34,7 @@ INSERT INTO membro (nome, cargo, descricao) VALUES
 ";
 
 $db = new SQLite3('db.sqlite3');
-$queries = explode(';', $init_sql);
+$queries = explode(';', $sql);
 
 foreach ($queries as $query) {
     if (!trim($query)) continue;
