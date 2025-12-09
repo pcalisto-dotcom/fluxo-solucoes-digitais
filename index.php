@@ -38,39 +38,7 @@
 
 <?php include './components/team.php'; ?>
 
-<section id="servicos">
-    <div class="container">
-        <div class="section-title">
-            <h2>Serviços Prestados</h2>
-        </div>
-        <div class="services-container">
-            <div class="service-card">
-                <h3>Desenvolvimento de Sistemas Web</h3>
-                <p>Criamos sistemas web personalizados utilizando as melhores tecnologias do mercado: HTML5, CSS3, JavaScript, PHP e MySQL/MariaDB.</p>
-            </div>
-            <div class="service-card">
-                <h3>E-commerce e Lojas Virtuais</h3>
-                <p>Desenvolvimento de plataformas de comércio eletrônico completas, com integração de pagamentos, gestão de estoque e relatórios.</p>
-            </div>
-            <div class="service-card">
-                <h3>Sistemas de Gestão Empresarial</h3>
-                <p>Soluções personalizadas para gestão de processos empresariais como CRM, ERP, controle de estoque e folha de pagamento.</p>
-            </div>
-            <div class="service-card">
-                <h3>Aplicativos Web Responsivos</h3>
-                <p>Desenvolvemos aplicações que funcionam perfeitamente em todos os dispositivos: desktop, tablet e smartphone.</p>
-            </div>
-            <div class="service-card">
-                <h3>Manutenção e Suporte</h3>
-                <p>Oferecemos suporte técnico especializado e manutenção preventiva e corretiva para sistemas já implantados.</p>
-            </div>
-            <div class="service-card">
-                <h3>Consultoria em Tecnologia</h3>
-                <p>Análise e recomendações para melhorar a infraestrutura tecnológica da sua empresa e otimizar processos digitais.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include './components/services.php'; ?>
 
 <section id="diferenciais">
     <div class="container">
