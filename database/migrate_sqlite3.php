@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $databaseFile = './mydb.sqlite3';
+    $databaseFile = './database/mydb.sqlite3'; 
     $db = new SQLite3($databaseFile);
 
     $init_sql = file_get_contents('./database/init.sql');
