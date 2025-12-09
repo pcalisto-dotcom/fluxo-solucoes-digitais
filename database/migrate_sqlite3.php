@@ -1,10 +1,10 @@
 <?php
 
 try {
-    $databaseFile = './database/mydb.sqlite3'; 
+    $databaseFile = sys_get_temp_dir() . '/mydb.sqlite3'; 
     $db = new SQLite3($databaseFile);
 
-    $init_sql = file_get_contents('./database/init.sql');
+    $init_sql = file_get_contents('./init.sql');
     $queries = explode(';', $init_sql);
 
     foreach ($queries as $query) {
