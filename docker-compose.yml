@@ -1,0 +1,35 @@
+services:
+  # Serviço Apache + PHP
+  web:
+    build: .
+    container_name: apache2
+    restart: unless-stopped
+    ports:
+      - "7021:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+      - PHP_MEMORY_LIMIT=256M
+      - PHP_UPLOAD_MAX_FILESIZE=50M
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Framboesa
+      MYSQL_DATABASE: fluxo
+      MYSQL_USER: fluxo
+      MYSQL_PASSWORD: Framboesa
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
