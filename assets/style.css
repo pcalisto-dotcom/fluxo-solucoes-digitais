@@ -259,6 +259,11 @@ section:nth-child(even) {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     border-left: 4px solid var(--secondary-color);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
 }
 
 .service-card h3 {
@@ -472,4 +477,9 @@ footer {
 
 .fade-in {
     animation: fadeInUp 0.8s ease-out;
+}
+
+#formContato {
+    margin-top: 30px;
+    margin-bottom: 40px;
 }

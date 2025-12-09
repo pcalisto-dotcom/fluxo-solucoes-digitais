@@ -1,21 +1,3 @@
-// Validação básica do formulário
-document.getElementById('formContato').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Validação simples
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
-        alert('Por favor, preencha todos os campos obrigatórios.');
-        return;
-    }
-
-    // Simulação de envio (em um projeto real, aqui seria uma requisição AJAX para PHP)
-    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-    document.getElementById('formContato').reset();
-});
 
 // Rolagem suave para âncoras
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
