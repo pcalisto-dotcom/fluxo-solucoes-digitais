@@ -1,26 +1,9 @@
 <?php
-$equipe = [
-    [
-        "nome" => "Maria Silva",
-        "cargo" => "CEO e Desenvolvedora Full-Stack",
-        "descricao" => "Responsável pela gestão da empresa e desenvolvimento de sistemas complexos. Especialista em PHP e React."
-    ],
-    [
-        "nome" => "João Santos",
-        "cargo" => "Desenvolvedor Back-End",
-        "descricao" => "Especialista em banco de dados MySQL/MariaDB e desenvolvimento de APIs RESTful. Focado em segurança e performance."
-    ],
-    [
-        "nome" => "Ana Oliveira",
-        "cargo" => "Desenvolvedora Front-End",
-        "descricao" => "Cria interfaces intuitivas e responsivas com HTML, CSS e JavaScript. Especialista em experiência do usuário (UX)."
-    ],
-    [
-        "nome" => "Carlos Ferreira",
-        "cargo" => "Analista de Sistemas",
-        "descricao" => "Analisa necessidades dos clientes e traduz em requisitos técnicos para a equipe de desenvolvimento."
-    ]
-];
+
+require_once dirname(__DIR__) . "/lib/database.php";
+
+$conn = get_conn();
+$equipe = $conn->query("SELECT nome, cargo, descricao FROM membro");
 ?>
 
 <section id="equipe">
