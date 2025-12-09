@@ -16,20 +16,6 @@ services:
     networks:
       - app-network
 
-  mysql:
-    image: mysql:8.0
-    container_name: mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: Framboesa
-      MYSQL_DATABASE: fluxo
-      MYSQL_USER: fluxo
-      MYSQL_PASSWORD: Framboesa
-    volumes:
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
-    networks:
-      - app-network
-
 networks:
   app-network:
     driver: bridge
