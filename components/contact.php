@@ -51,25 +51,25 @@
 
             <div class="contact-form">
                 <h3>Envie uma Mensagem</h3>
-                <form id="formContato">
+                <form id="formContato" action="/api/add_contato.php" method="post">
                     <div class="form-group">
                         <label for="nome">Nome completo *</label>
-                        <input type="text" id="nome" class="form-control" required>
+                        <input type="text" id="nome" class="form-control" name="nome" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">E-mail *</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <input type="email" id="email" class="form-control" name="email" required>
                     </div>
 
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" class="form-control">
+                        <input type="tel" id="telefone" class="form-control" name="telefone">
                     </div>
 
                     <div class="form-group">
                         <label for="assunto">Assunto</label>
-                        <select id="assunto" class="form-control">
+                        <select id="assunto" class="form-control" name="assunto">
                             <option value="">Selecione um assunto</option>
                             <option value="orcamento">Orçamento</option>
                             <option value="duvida">Dúvida</option>
@@ -80,7 +80,7 @@
 
                     <div class="form-group">
                         <label for="mensagem">Mensagem *</label>
-                        <textarea id="mensagem" class="form-control" required></textarea>
+                        <textarea id="mensagem" class="form-control" required name="descricao"></textarea>
                     </div>
 
                     <button type="submit" class="btn">Enviar Mensagem</button>

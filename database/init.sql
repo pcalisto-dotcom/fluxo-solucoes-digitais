@@ -1,5 +1,4 @@
 DROP TABLE IF EXISTS servico;
-
 CREATE TABLE IF NOT EXISTS servico (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255),
@@ -7,11 +6,20 @@ CREATE TABLE IF NOT EXISTS servico (
 );
 
 DROP TABLE IF EXISTS membro;
-
 CREATE TABLE IF NOT EXISTS membro (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255),
     cargo VARCHAR(255),
+    descricao TEXT
+);
+
+DROP TABLE IF EXISTS contato;
+CREATE TABLE IF NOT EXISTS contato (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    email VARCHAR(255),
+    telefone VARCHAR(20),
+    assunto VARCHAR(255),
     descricao TEXT
 );
 
