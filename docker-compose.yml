@@ -1,5 +1,4 @@
 services:
-  # Serviço Apache + PHP
   web:
     build: .
     container_name: apache2
