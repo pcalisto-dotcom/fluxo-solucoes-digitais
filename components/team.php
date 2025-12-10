@@ -3,7 +3,7 @@
 require_once dirname(__DIR__) . "/lib/database.php";
 
 $conn = get_conn();
-$equipe = $conn->query("SELECT nome, cargo, descricao FROM membro");
+$equipe = $conn->query("SELECT nome, cargo, bio FROM membro");
 ?>
 
 <section id="equipe">
@@ -20,7 +20,7 @@ $equipe = $conn->query("SELECT nome, cargo, descricao FROM membro");
                     <div class="member-info">
                         <h3><?= $membro['nome'] ?></h3>
                         <p class="role"><?= $membro['cargo'] ?></p>
-                        <p><?= $membro['descricao'] ?></p>
+                        <p><?= $membro['bio'] ?></p>
                     </div>
                 </div>
             <?php endforeach; ?>
