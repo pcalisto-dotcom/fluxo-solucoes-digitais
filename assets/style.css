@@ -237,6 +237,7 @@ section:nth-child(even) {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 5px;
+    font-size: 22px;
 }
 
 .member-info .role {
