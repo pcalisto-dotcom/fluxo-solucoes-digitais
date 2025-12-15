@@ -215,7 +215,7 @@ section:nth-child(even) {
     transform: translateY(-10px);
 }
 
-.member-img {
+/* .member-img {
     height: 200px;
     background-color: #ddd;
     display: flex;
@@ -224,20 +224,27 @@ section:nth-child(even) {
     font-size: 4rem;
     color: var(--primary-color);
 }
+*/
 
 .member-info {
     padding: 1.5rem;
 }
 
 .member-info h3 {
+    text-align: center;
     color: var(--primary-color);
     margin-bottom: 5px;
 }
 
 .member-info .role {
+    text-align: center;
     color: var(--secondary-color);
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.member-info p {
+    text-align: center;
 }
 
 /* Serviços */
