@@ -14,9 +14,6 @@ $equipe = $conn->query("SELECT nome, cargo, descricao FROM membro");
         <div class="team-container">
             <?php foreach ($equipe as $membro): ?>
                 <div class="team-member">
-                    <div class="member-img">
-                        <i class="fas fa-user"></i>
-                    </div>
                     <div class="member-info">
                         <h3><?= $membro['nome'] ?></h3>
                         <p class="role"><?= $membro['cargo'] ?></p>

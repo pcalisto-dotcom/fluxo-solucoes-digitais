@@ -1,5 +1,4 @@
 DROP TABLE IF EXISTS servico;
-
 CREATE TABLE IF NOT EXISTS servico (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255),
@@ -7,11 +6,20 @@ CREATE TABLE IF NOT EXISTS servico (
 );
 
 DROP TABLE IF EXISTS membro;
-
 CREATE TABLE IF NOT EXISTS membro (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255),
     cargo VARCHAR(255),
+    descricao TEXT
+);
+
+DROP TABLE IF EXISTS contato;
+CREATE TABLE IF NOT EXISTS contato (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    email VARCHAR(255),
+    telefone VARCHAR(20),
+    assunto VARCHAR(255),
     descricao TEXT
 );
 
@@ -24,7 +32,7 @@ INSERT INTO servico (titulo, descricao) VALUES
 ('Consultoria em Tecnologia', 'Análise e recomendações para melhorar a infraestrutura tecnológica da sua empresa e otimizar processos digitais.');
 
 INSERT INTO membro (nome, cargo, descricao) VALUES
-('Maria Silva', 'CEO e Desenvolvedora Full-Stack', 'Responsável pela gestão da empresa e desenvolvimento de sistemas complexos. Especialista em PHP e React.'),
-('João Santos', 'Desenvolvedor Back-End', 'Especialista em banco de dados MySQL/MariaDB e desenvolvimento de APIs RESTful. Focado em segurança e performance.'),
-('Ana Oliveira', 'Desenvolvedora Front-End', 'Cria interfaces intuitivas e responsivas com HTML, CSS e JavaScript. Especialista em experiência do usuário (UX).'),
-('Carlos Ferreira', 'Analista de Sistemas', 'Analisa necessidades dos clientes e traduz em requisitos técnicos para a equipe de desenvolvimento.');
+('Guilherme Nascimento', 'Desenvolvedora Full-Stack', 'Responsável no desenvolvimento de sistemas complexos. Especialista em PHP e React.'),
+('Michael Santos', 'Desenvolvedor Full-Stack', 'Responsável no desenvolvimento de APIs RESTful e SaaS. Especialista em Laravel, React e Springboot e banco de dados relacionais.'),
+('Pedro Henrique Calisto', 'Desenvolvedor Front-End', 'Cria interfaces intuitivas e responsivas com HTML, CSS e JavaScript. Especialista em experiência do usuário (UX).'),
+('João Pedro Bezerra', 'Analista de Sistemas', 'Analisa necessidades dos clientes e traduz em requisitos técnicos para a equipe de desenvolvimento.');

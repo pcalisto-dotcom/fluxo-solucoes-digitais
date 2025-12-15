@@ -4,10 +4,10 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <div class="logo-img">WDS</div>
+                <img src="/assets/logo.png" alt="logo" class="logo-img">
                 <div class="logo-text">
-                    <h1>WebDev Solutions</h1>
-                    <p>Desenvolvimento de Sistemas para Internet</p>
+                    <h1>Fluxo</h1>
+                    <p>Soluções digitais</p>
                 </div>
             </div>
             <nav>
