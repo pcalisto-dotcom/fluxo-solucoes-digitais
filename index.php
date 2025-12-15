@@ -10,6 +10,7 @@
 
 <?php include __DIR__ . "/components/empresa.php"; ?>
 <?php include __DIR__ . "/components/team.php"; ?>
+<?php include __DIR__ . "/components/analise_swot.php"; ?>
 <?php include __DIR__ . "/components/services.php"; ?>
 <?php include __DIR__ . "/components/contact.php"; ?>
 
