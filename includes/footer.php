@@ -3,7 +3,7 @@
     <div class="container">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="/assets/logo.jpeg" alt="logo" class="logo-img">
+                <img src="/assets/logo.png" alt="logo" class="logo-img">
                 <p>Fluxo Soluções Digitais</p>
 
                 <div class="footer-social">
