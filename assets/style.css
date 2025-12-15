@@ -53,6 +53,9 @@ header {
 
 .logo-img {
     width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,6 +387,10 @@ footer {
     height: 50px;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.footer-social {
+    margin-top: 40px;
 }
 
 .footer-links h3,

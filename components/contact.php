@@ -34,7 +34,7 @@
                     </div>
                     <div>
                         <h4>E-mail</h4>
-                        <p>contato@webdevsolutions.com.br</p>
+                        <p>contato@fluxosolucoesdigitais.com.br</p>
                     </div>
                 </div>
 
