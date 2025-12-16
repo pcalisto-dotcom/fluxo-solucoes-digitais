@@ -28,7 +28,6 @@ body {
     padding: 0 15px;
 }
 
-/* Header e Navegação */
 header {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -94,7 +93,6 @@ nav ul li a:hover {
     border-bottom: 2px solid var(--secondary-color);
 }
 
-/* Seções gerais */
 section {
     padding: 4rem 0;
 }
@@ -127,7 +125,6 @@ section:nth-child(even) {
     transform: translateX(-50%);
 }
 
-/* Hero Section */
 #hero {
     background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
@@ -167,7 +164,6 @@ section:nth-child(even) {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Missão, Visão e Valores */
 .mv-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -199,7 +195,6 @@ section:nth-child(even) {
     color: var(--accent-color);
 }
 
-/* Membros da Equipe */
 .team-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -217,17 +212,6 @@ section:nth-child(even) {
 .team-member:hover {
     transform: translateY(-10px);
 }
-
-/* .member-img {
-    height: 200px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: var(--primary-color);
-}
-*/
 
 .member-info {
     padding: 1.5rem;
@@ -251,7 +235,6 @@ section:nth-child(even) {
     text-align: center;
 }
 
-/* Serviços */
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -277,7 +260,6 @@ section:nth-child(even) {
     font-size: 1.3rem;
 }
 
-/* Diferenciais */
 .diferentials-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -314,7 +296,6 @@ section:nth-child(even) {
     font-size: 1.5rem;
 }
 
-/* Contato */
 .contact-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -369,7 +350,6 @@ textarea.form-control {
     resize: vertical;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -449,7 +429,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -479,7 +458,6 @@ footer {
     }
 }
 
-/* Animações */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -499,4 +477,63 @@ footer {
 #formContato {
     margin-top: 30px;
     margin-bottom: 40px;
+}
+
+.swot-analysis {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.swot-analysis h4 {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.swot-item h5 {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.swot-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+.swot-item ul li {
+    background: #f8f9fa;
+    padding: 6px 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    color: #333;
+}
+
+.forca h5 { color: #27ae60; }
+.fraqueza h5 { color: #e74c3c; }
+.ameaca h5 { color: #f39c12; }
+.oportunidade h5 { color: #3498db; }
+
+@media (max-width: 768px) {
+    .swot-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .swot-grid {
+        grid-template-columns: 1fr;
+    }
 }
