@@ -3,8 +3,18 @@
     <div class="container">
         <div class="footer-container">
             <div class="footer-logo">
-                <div class="logo-img">WDS</div>
-                <p>WebDev Solutions - Desenvolvimento de Sistemas para Internet</p>
+                <img src="/assets/logo.png" alt="logo" class="logo-img">
+                <p>Fluxo Soluções Digitais</p>
+
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
             
             <div class="footer-links">
@@ -18,21 +28,11 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-social">
-                <h3>Redes Sociais</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
         </div>
         
         <div class="copyright">
-            <p>&copy; 2023 WebDev Solutions. Todos os direitos reservados.</p>
-            <p>Desenvolvido com HTML, CSS, JavaScript, PHP e MySQL/MariaDB</p>
+            <p>&copy; 2025 Fluxo Soluções Digitais. Todos os direitos reservados.</p>
+            <p>Desenvolvido com HTML, CSS, JavaScript, PHP e SQLite3</p>
         </div>
     </div>
 </footer>
