@@ -1,7 +1,7 @@
 <?php
 
 function get_conn() {
-    $databaseFile = dirname(__DIR__) . '../database/mydb.sqlite3';
+    $databaseFile = './database/mydb.sqlite3';
     $pdo = new PDO("sqlite:$databaseFile");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $pdo;
