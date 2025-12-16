@@ -8,7 +8,7 @@
                 <div class="footer-contact">
                     <div class="footer-contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>contato@fluxosolucoesdigitais.com.br</span>
+                        <span>fluxosolucoes@gmail.com</span>
                     </div>
 
                     <div class="footer-contact-item">
