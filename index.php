@@ -12,6 +12,6 @@
 <?php include __DIR__ . "/components/team.php"; ?>
 <?php include __DIR__ . "/components/analise_swot.php"; ?>
 <?php include __DIR__ . "/components/services.php"; ?>
-<?php include __DIR__ . "/components/contact.php"; ?>
+<?php include __DIR__ . "/components/diferentials.php"; ?>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
