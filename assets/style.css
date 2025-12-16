@@ -364,10 +364,9 @@ footer {
 }
 
 .footer-logo .logo-img {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    width: 80px;
     margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 .footer-social {
