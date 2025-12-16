@@ -16,7 +16,7 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#equipe">Equipe</a></li>
                     <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
                 </ul>
             </nav>
         </div>

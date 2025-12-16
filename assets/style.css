@@ -250,15 +250,30 @@ section:nth-child(even) {
     transition: transform 0.3s;
 }
 
-.service-card:hover {
+.service-card:hover,
+.diferential-card:hover {
     transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
 
-.service-card h3 {
+.service-card h3, .diferential-card h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
+
+.diferential-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #350080;
+    transition: transform 0.3s;
+}
+
 
 .diferentials-container {
     display: grid;
@@ -296,65 +311,28 @@ section:nth-child(even) {
     font-size: 1.5rem;
 }
 
-.contact-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-}
-
-.contact-info h3,
-.contact-form h3 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.contact-icon {
-    width: 40px;
-    height: 40px;
-    background-color: var(--light-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-    color: var(--secondary-color);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.form-control {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-textarea.form-control {
-    min-height: 150px;
-    resize: vertical;
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
     padding: 3rem 0 1.5rem;
 }
+
+.footer-contact {
+    margin: 15px 0;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.footer-contact-item i {
+    font-size: 1rem;
+}
+
 
 .footer-container {
     display: grid;
@@ -521,10 +499,21 @@ footer {
     color: #333;
 }
 
-.forca h5 { color: #27ae60; }
-.fraqueza h5 { color: #e74c3c; }
-.ameaca h5 { color: #f39c12; }
-.oportunidade h5 { color: #3498db; }
+.forca h5 {
+    color: #27ae60;
+}
+
+.fraqueza h5 {
+    color: #e74c3c;
+}
+
+.ameaca h5 {
+    color: #f39c12;
+}
+
+.oportunidade h5 {
+    color: #3498db;
+}
 
 @media (max-width: 768px) {
     .swot-grid {
