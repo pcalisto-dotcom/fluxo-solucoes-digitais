@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $databaseFile = sys_get_temp_dir() . '/mydb.sqlite3'; 
+    $databaseFile = './mydb.sqlite3'; 
     $db = new SQLite3($databaseFile);
 
     $init_sql = file_get_contents('./init.sql');
