@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Soluções Digitais para o Seu Negócio</h1>
         <p>Desenvolvemos sistemas web personalizados que impulsionam sua empresa para o futuro digital. Combinamos tecnologia de ponta com design inovador para criar soluções que realmente funcionam.</p>
-        <a href="#contato" class="btn">Entre em Contato</a>
+        <a href="#footer" class="btn">Entre em Contato</a>
     </div>
 </section>
 

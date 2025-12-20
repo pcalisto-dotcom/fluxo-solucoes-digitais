@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="footer-container">
             <div class="footer-logo">
@@ -14,6 +14,11 @@
                     <div class="footer-contact-item">
                         <i class="fas fa-phone"></i>
                         <span>(11) 99999-9999</span>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Av. Salgado Filho, 3501, Centro, Guarulhos, SP</span>
                     </div>
                 </div>
 
@@ -31,7 +36,7 @@
             <div class="footer-links">
                 <h3>Links Rápidos</h3>
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#hero">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#equipe">Equipe</a></li>
                     <li><a href="#servicos">Serviços</a></li>

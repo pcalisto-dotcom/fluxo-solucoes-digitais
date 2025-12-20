@@ -12,7 +12,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#hero">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#equipe">Equipe</a></li>
                     <li><a href="#servicos">Serviços</a></li>
